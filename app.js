@@ -116,7 +116,10 @@ function handleChange(event) {
   myColor.style.backgroundColor = color;
 }
 
-function handleMyClick() {
+function handleMyClick(event) {
+  const color = event.target.style.backgroundColor;
+  ctx.strokeStyle = color;
+  ctx.fillStyle = color;
   Array.from(colors).forEach(hello => hello.classList.remove(PICKED));
   pickColor.click();
   myColor.classList.add(PICKED);
