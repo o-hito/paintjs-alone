@@ -1,0 +1,90 @@
+@import "reset.css";
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: #f6f9fc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0px;
+}
+
+h1 {
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+
+#canvas {
+  background-color: white;
+  width: 500px;
+  height: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(50, 50, 93, 0.11);
+}
+
+.controls {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.controls .controls__btns {
+  margin-top: 20px;
+}
+
+.btns {
+  all: unset;
+  color: rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 5px;
+  width: 60px;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 500;
+  background-color: rgba(202, 133, 64, 0.479);
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(50, 50, 93, 0.11);
+}
+
+.controls__btns button:hover {
+  background-color: rgba(196, 111, 14, 0.767);
+}
+
+.controls__btns button:active {
+  transform: scale(0.98);
+}
+
+.controls__colors {
+  margin-top: 20px;
+  display: flex;
+}
+
+.controls__color {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(50, 50, 93, 0.11);
+}
+
+.myColor {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 12px;
+}
+
+.resizeForm {
+  margin-bottom: 30px;
+}
+
+#pickColor {
+  display: none;
+}
+
+.picked {
+  box-shadow: 0 0 10px 2px #a510ff;
+}
